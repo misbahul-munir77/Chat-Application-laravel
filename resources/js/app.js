@@ -37,6 +37,7 @@ window.Echo.join('online')
         if(status){
 
             status.classList.add('online');
+            status.innerText = 'Online';
 
         }
 
