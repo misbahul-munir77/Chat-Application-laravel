@@ -31,6 +31,14 @@
         </div>
         <div class="daftar-user">
             <h3>Groups</h3>
+            <form action="/group" method="get">
+                <div class="search-box">
+                    <span class="icon">
+                        <img src="../img/Search.png" alt="search">
+                    </span>
+                    <input type="search" name="search" id="search" placeholder="Cari Grup">
+                </div>
+            </form>
             @foreach($groups as $group)
             <a href="/group/{{ $group->id }}" class="chat-real">
                 <img src="../img/{{ $group->gambar }}" alt="">

@@ -9,9 +9,12 @@ use Illuminate\Support\Facades\Auth;
 
 class UsersController extends Controller
 {
-    public function index(){
-        $users = DB::table('users')->get();
-        return view('user.dashboard', compact('users'));
+    public function index(Request $request){
+        $search = $request->search;
+        $users = DB::table('users')
+            ->where('name', 'like', '%' . $search . '%')
+            ->get();
+        return view('user.dashboard', compact('users', 'search'));
     }
 
     public function chat($id) {

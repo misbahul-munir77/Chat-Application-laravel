@@ -10,9 +10,13 @@ use App\Events\GroupPesanTerkirim;
 
 class GroupController extends Controller
 {
-    public function index() {
-        $groups = DB::table('groups')->get();
-        return view('user.group', compact('groups'));
+    public function index(Request $request) {
+        $search = $request->search;
+
+        $groups = DB::table('groups')
+            ->where('nama_group', 'like', '%' . $search . '%')
+            ->get();
+        return view('user.group', compact('groups', 'search'));
     }
 
     public function group($id){

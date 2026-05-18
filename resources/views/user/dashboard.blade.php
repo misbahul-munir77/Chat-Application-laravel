@@ -31,6 +31,14 @@
         </div>
         <div class="daftar-user">
             <h3>Chats</h3>
+            <form action="/user" method="get">
+                <div class="search-box">
+                    <span class="icon">
+                        <img src="../img/Search.png" alt="search">
+                    </span>
+                    <input type="search" name="search" id="search" placeholder="Cari obrolan">
+                </div>
+            </form>
             @foreach($users as $user)
             <a href="/user/{{ $user->id }}" class="chat-real">
                 <img src="../img/{{ $user->gambar }}" alt="">
@@ -75,7 +83,7 @@
                     @csrf
                     <input type="hidden" name="penerima_id" value="{{ $userDipilih->id }}">
                     <div class="ngirim-chat">
-                        <input type="text" name="pesan" placeholder="Ketik pesan" autofocus autocomplete="off" required>
+                        <input type="text" name="pesan" placeholder="Ketik pesan. . ." autofocus autocomplete="off" required>
                         <button type="submit"><img src="../img/kirim.png" alt=""></button>
                     </div>
                 </form>
