@@ -59,13 +59,19 @@
                     @foreach($pesanGroup as $groupPesan)
                         @if($groupPesan->pengirim_id == Auth::id())
                         <div class="pesan-saya">
-                            <p>{{ $groupPesan->pesan }}</p>
+                            <div class="bubble-chat">
+                                <p>{{ $groupPesan->pesan }}</p>
+                                <small>{{ \Carbon\Carbon::parse($groupPesan->created_at)->format('H:i') }}</small>
+                            </div>
                             <img src="../img/{{ $groupPesan->gambar }}" alt="">
                         </div>
                         @else
                         <div class="pesan-dia">
                             <img src="../img/{{ $groupPesan->gambar }}" alt="">
-                            <p>{{ $groupPesan->pesan }}</p>
+                            <div class="bubble-chat">
+                                <p>{{ $groupPesan->pesan }}</p>
+                                <small>{{ \Carbon\Carbon::parse($groupPesan->created_at)->format('H:i') }}</small>
+                            </div>
                         </div>
                         @endif
                     @endforeach

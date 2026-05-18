@@ -55,11 +55,17 @@
                     @foreach($pesan as $message)
                         @if($message->pengirim_id == Auth::id())
                         <div class="pesan-saya">
-                            <p>{{ $message->pesan }}</p>
+                            <div class="bubble-chat">
+                                <p>{{ $message->pesan }}</p>
+                                <small>{{ \Carbon\Carbon::parse($message->created_at)->format('H:i') }}</small>
+                            </div>
                         </div>
                         @else
                         <div class="pesan-dia">
-                            <p>{{ $message->pesan }}</p>
+                            <div class="bubble-chat">
+                                <p>{{ $message->pesan }}</p>
+                                <small>{{ \Carbon\Carbon::parse($message->created_at)->format('H:i') }}</small>
+                            </div>
                         </div>
                         @endif
                     @endforeach

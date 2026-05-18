@@ -266,6 +266,31 @@
     overflow-wrap: break-word;
 }
 
+.bubble-chat{
+    background: #2563EB;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bubble-chat p{
+    margin: 0;
+}
+
+.bubble-chat small{
+    font-size: 11px;
+    margin-top: 5px;
+    align-self: flex-end;
+    opacity: 0.8;
+}
+
 .pesan-dia{
     display: flex;
     justify-content: start;
