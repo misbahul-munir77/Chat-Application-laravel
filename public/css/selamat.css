@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color: #0f3077;
+}
+
+body{
+    background: url("../img/bg.png") no-repeat center center fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.identitas{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.identitas img{
+    width: 80px;
+    height: 80px;
+}
+
+.identitas-asli p{
+    color: #808080;
+    font-weight: 400;
+}
+
+.welcome{
+    margin-top: 120px;
+    margin-left: 300px;
+}
+
+.welcome h3{
+    color: #fff;
+    font-size: 30px;
+}
+
+.welcome h1{
+    font-size: 50px;
+    color: #1e459a;
+}
+
+.dari{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dari h3{
+    color: #fff;
+    font-size: 30px;
+}
+
+.dari h1{
+    font-size: 40px;
+    color: #1e459a;
+}
+
+.deskripsi p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #808080;
+}
+
+.bagi{
+    display: flex;
+    gap: 6rem;
+}
+
+.started{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #0f3077;
+    text-decoration: none;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 300px;
+    text-align: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+.started:hover{
+    transform: translateX(15px);
+    background-color: #2563EB;
+}
+
+.started img{
+    width: 30px;
+    height: 30px;
+}
+
+.started p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.register{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #0f3077;
+    text-decoration: none;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.5s ease;
+}
+
+.register:hover{
+    transform: translateX(15px);
+    background-color: #2563EB;
+}
+
+.register img{
+    width: 30px;
+    height: 30px;
+}
+
+.register p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}

@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body{
+    background-color: #F5F7FB;
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar{
+    width: 230px;
+    background-color: #0f3077;
+    box-shadow: 0 0 15px rgba(0, 0, 0);
+    height: 100vh;
+    position: fixed;
+}
+
+.logo-app{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.logo-app img{
+    width: 60px;
+    height: 60px;
+}
+
+.logo-app h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.chat{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 50px;
+    gap: 1rem;
+    text-decoration: none;
+    padding: 10px 0 10px 10px;
+    border-radius: 20px 0 0 20px;
+    transition: 0.5s ease;
+}
+
+.chat img{
+    width: 35px;
+    height: 35px;
+}
+
+.chat p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.group{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20px;
+    gap: 1rem;
+    text-decoration: none;
+    padding: 10px 0 10px 10px;
+    border-radius: 20px 0 0 20px;
+    transition: 0.5s ease;
+}
+
+.group img{
+    width: 35px;
+    height: 35px;
+}
+
+.group p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.group:hover{
+    background-color: #2563EB;
+}
+
+.chat:hover{
+    background-color: #2563EB;
+}
+
+.logout{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 380px;
+    gap: 1rem;
+    text-decoration: none;
+    padding: 10px 0 10px 10px;
+    border-radius: 20px 0 0 20px;
+    transition: 0.5s ease;
+}
+
+.logout img{
+    width: 30px;
+    height: 30px;
+}
+
+.logout p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logout:hover{
+    background-color: #2563EB;
+}
+
+/* bagian daftar user */
+.daftar-user{
+    width: 350px;
+    margin: 0 0 0 245px;
+    border-right: 2px solid #d5d5d5;
+    padding-top: 20px;
+}
+
+.daftar-user h3{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.chat-real{
+    display: flex;
+    margin-top: 5px;
+    gap: 1rem;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s ease;
+    border-radius: 30px 0 0 30px;
+}
+
+.chat-real:hover{
+    background-color: #d3d3d3;
+}
+
+.chat-real img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.tampilan-chat{
+    border-right: 2px solid #d5d5d5;
+    width: 100%;
+    height: 100vh;
+}
+
+.profil-atas{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #0f3077;
+    padding: 20px 0 20px 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0, 0, 0);
+}
+
+.profil-atas img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.tampilan-atas p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tampilan-tengah{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+    background: url("../img/background.jpg");
+    background-size: cover;
+}
+
+.online-users{
+    width: 200px;
+}
+
+
+.ngirim-chat{
+    bottom: 0;
+}
+
+.area-chat{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.area-chat p{
+    color: #fff;
+    font-size: 14px;
+}
+
+.area-chat img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.ngirim-chat{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.ngirim-chat input{
+    flex: 1;
+    padding: 10px;
+    background-color: #d5d5d5;
+    border: none;
+    border-radius: 10px;
+}
+
+.ngirim-chat input:focus{
+    outline: none;
+    border: 1px solid #2563EB;
+}
+
+.ngirim-chat button{
+    background-color: #2563EB;
+    border-radius: 50%;
+}
+
+.ngirim-chat button img{
+    width: 40px;
+    height: 40px;
+}
+
+.pesan-saya{
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    gap: 1rem;
+}
+
+.pesan-saya p{
+    background: #2563EB;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.pesan-dia{
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+    gap: 1rem;
+}
+
+.pesan-dia p{
+    background: #2563EB;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.status-user{
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status-user.online{
+    color: limegreen;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ketuk{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 1rem;
+}
+
+.ketuk img{
+    width: 150px;
+    height: 150px;
+}
+
+.ketuk h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.group-cek{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: #fff;
+    gap: 1rem;
+}
+
+.group-cek img{
+    width: 150px;
+    height: 150px;
+}
+
+.group-cek h2{
+    font-size: 24px;
+    font-weight: bold;
+}

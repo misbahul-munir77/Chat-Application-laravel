@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #F5F7FB;
+}
+
+:root{
+    --primary-color: #2563EB;
+}
+
+/* bagian login */
+.container-login{
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    background-color: #fff;
+    margin: 140px 0 0 275px;
+    padding: 50px 50px 50px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    height: 50vh;
+    border-radius: 15px;
+}
+
+.welcome{
+    text-align: center;
+    border-right: 2px solid #a6a6a6;
+    padding: 20px;
+    width: 100%;
+}
+
+.welcome h1{
+    padding-bottom: 20px;
+    color: #333;
+}
+
+.welcome p{
+    padding-bottom: 20px;
+    color: #a6a6a6;
+}
+
+.welcome img{
+    width: 150px;
+    height: 150px;
+}
+
+.kotak-form-login{
+    padding: 20px 20px 20px 50px;
+    width: 100%;
+}
+
+.kotak-form-login h2{
+    text-align: left;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+label{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 0 8px 0;
+    color: #444;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.input:focus{
+    border-color: var(--primary-color);
+}
+
+.error{
+    border-color: red;
+}
+
+.pesan-error{
+    margin-top: 5px;
+    color: red;
+    font-size: 13px;
+}
+
+.kotak-form-login button{
+    margin-top: 25px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: 0.5s ease;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.kotak-form-login button:hover{
+    background-color: #1b4bb4;
+}
+
+.pengguna-baru{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.pengguna-baru a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+
+.mode-gelap button{
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.mode-gelap button img{
+    width: 30px;
+    height: 30px;
+}
+
+.ganti-warna{
+    background-color: black;
+}
+
+/* daftar */
+.container-daftar{
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    background-color: #fff;
+    margin: 50px 0 0 275px;
+    padding: 50px 50px 50px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    height: 75vh;
+    border-radius: 15px;
+}
+
+
+.kotak-form-daftar{
+    padding: 20px 20px 20px 50px;
+    width: 100%;
+}
+
+.kotak-form-daftar h2{
+    text-align: left;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.kotak-form-daftar button{
+    margin-top: 25px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: 0.5s ease;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.kotak-form-daftar button:hover{
+    background-color: #1b4bb4;
+}
