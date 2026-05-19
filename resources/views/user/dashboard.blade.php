@@ -31,7 +31,7 @@
         </div>
         <div class="daftar-user">
             <h3>Chats</h3>
-            <form action="/user" method="get">
+            <form action="/user" method="get" autocomplete="off">
                 <div class="search-box">
                     <span class="icon">
                         <img src="../img/Search.png" alt="search">

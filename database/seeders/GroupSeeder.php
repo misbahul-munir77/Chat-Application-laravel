@@ -33,7 +33,7 @@ class GroupSeeder extends Seeder
                 'updated_at' => now()
             ],
             [
-                'nama_group' => 'stiker ngawi timur',
+                'nama_group' => 'SPAR FF',
                 'gambar' => 'ngawi.jpg',
                 'created_at' => now(),
                 'updated_at' => now()

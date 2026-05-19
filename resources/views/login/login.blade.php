@@ -17,7 +17,7 @@
         
         <div class="kotak-form-login">
             <h2>Login</h2>
-            <form action="/login" method="post">
+            <form action="/login" method="post" autocomplete="off">
                 @csrf
                 @error('login')
                 <div class="pesan-error">

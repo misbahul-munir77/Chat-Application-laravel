@@ -18,7 +18,7 @@
 
         <div class="kotak-form-daftar">
             <h2>Register</h2>
-            <form action="/register" method="post">
+            <form action="/register" method="post" autocomplete="off">
                 @csrf
                 <label for="nama">Nama Lengkap</label>
                 <input type="text" name="name" id="nama" class="input @error('name') error @enderror" placeholder="Cth: Misbahul munir">

@@ -31,7 +31,7 @@
         </div>
         <div class="daftar-user">
             <h3>Groups</h3>
-            <form action="/group" method="get">
+            <form action="/group" method="get" autocomplete="off">
                 <div class="search-box">
                     <span class="icon">
                         <img src="../img/Search.png" alt="search">

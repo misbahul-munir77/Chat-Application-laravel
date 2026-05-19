@@ -31,10 +31,10 @@ class UsersSeeder extends Seeder
                 'updated_at' => now()
             ],
             [
-                'name' => 'Pak Ikhwan',
+                'name' => 'Pak Muhammad Ikhwani, S.Pd.I., M.Sc',
                 'email' => 'ikhwan@gmail.com',
                 'password' => bcrypt('ikhwan123'),
-                'gambar' => 'ikhwan.png',
+                'gambar' => 'pakikhwan.png',
                 'created_at' => now(),
                 'updated_at' => now()
             ],
@@ -43,14 +43,6 @@ class UsersSeeder extends Seeder
                 'email' => 'asha@gmail.com',
                 'password' => bcrypt('asha123'),
                 'gambar' => 'asha.jpeg',
-                'created_at' => now(),
-                'updated_at' => now()
-            ],
-            [
-                'name' => 'Genggong',
-                'email' => 'geng@gmail.com',
-                'password' => bcrypt('geng123'),
-                'gambar' => 'genggong.jpeg',
                 'created_at' => now(),
                 'updated_at' => now()
             ],
