@@ -9,6 +9,7 @@ Aplikasi chat realtime berbasis Laravel yang mendukung private chat dan group ch
 - Private Chat Realtime
 - Group Chat Realtime
 - Online & Offline Status
+- Search User/Group
 - Daftar User
 - Daftar Group
 - Validasi Akses Group
@@ -23,7 +24,6 @@ Aplikasi chat realtime berbasis Laravel yang mendukung private chat dan group ch
 - Laravel Reverb
 - Laravel Echo
 - JavaScript
-- Blade Template
 - CSS
 
 ---
@@ -47,3 +47,4 @@ npm.cmd run dev
 
 catatan
 project ini mesih dalam tahap pengembangan
+Misbahul munir(240180066)
