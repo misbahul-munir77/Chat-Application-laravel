@@ -123,7 +123,7 @@
 
 /* bagian daftar user */
 .daftar-user{
-    width: 380px;
+    width: 400px;
     margin: 0 0 0 245px;
     padding-top: 20px;
 }
@@ -136,7 +136,7 @@
 /* search */
 .search-box{
     position: relative;
-    width: 250px;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 30px;
 }
@@ -169,7 +169,6 @@
 
 .chat-real{
     display: flex;
-    margin-top: 5px;
     gap: 1rem;
     text-decoration: none;
     padding: 10px;
@@ -185,6 +184,22 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+.chat-real p{
+    display: block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-real small{
+    display: block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .tampilan-chat{

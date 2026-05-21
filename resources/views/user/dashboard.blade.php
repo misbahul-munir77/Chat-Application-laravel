@@ -44,7 +44,7 @@
                 <img src="../img/{{ $user->gambar }}" alt="">
                 <div class="isi-chat">
                     <p>{{ $user->name }}</p>
-                    <p></p>
+                    <small>{{ $user->pesanTerakhir }}</small>
                 </div>
             </a>
             @endforeach

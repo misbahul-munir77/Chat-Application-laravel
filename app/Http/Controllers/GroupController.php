@@ -16,11 +16,35 @@ class GroupController extends Controller
         $groups = DB::table('groups')
             ->where('nama_group', 'like', '%' . $search . '%')
             ->get();
+
+        foreach($groups as $group){
+            $pesan_terakhir = DB::table('group_messages')
+               ->where('group_id', $group->id)
+               ->latest()
+               ->first();
+
+            $group->pesanTerakhir = $pesan_terakhir
+            ? $pesan_terakhir->pesan
+            : 'Belum ada pesan';
+        }
+
         return view('user.group', compact('groups', 'search'));
     }
 
     public function group($id){
         $groups = DB::table('groups')->get();
+
+        foreach($groups as $group){
+            $pesan_terakhir = DB::table('group_messages')
+               ->where('group_id', $group->id)
+               ->latest()
+               ->first();
+
+            $group->pesanTerakhir = $pesan_terakhir
+            ? $pesan_terakhir->pesan
+            : 'Belum ada pesan';
+        }
+
         $groupDipilih = DB::table('groups')->where('id', $id)->first();
 
         $cek = DB::table('group_user')

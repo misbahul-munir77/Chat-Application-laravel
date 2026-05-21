@@ -44,6 +44,7 @@
                 <img src="../img/{{ $group->gambar }}" alt="">
                 <div class="isi-chat">
                     <p>{{ $group->nama_group }}</p>
+                    <small>{{ $group->pesanTerakhir }}</small>
                 </div>
             </a>
             @endforeach

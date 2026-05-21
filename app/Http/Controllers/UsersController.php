@@ -12,13 +12,55 @@ class UsersController extends Controller
     public function index(Request $request){
         $search = $request->search;
         $users = DB::table('users')
+            ->where('id', '!=', Auth::id())
             ->where('name', 'like', '%' . $search . '%')
             ->get();
+
+        foreach($users as $user){
+            $pesan_terakhir = DB::table('message')
+                    ->where(function($query) use ($user){
+                        $query->where('pengirim_id', Auth::id())
+                              ->where('penerima_id', $user->id);
+                    })
+
+                    ->orWhere(function($query) use ($user){
+                        $query->where('pengirim_id', $user->id)
+                              ->where('penerima_id', Auth::id());
+                    })
+
+                    ->latest()
+                    ->first();
+
+             $user->pesanTerakhir = $pesan_terakhir
+            ? $pesan_terakhir->pesan
+            : 'Belum ada pesan';
+        }           
         return view('user.dashboard', compact('users', 'search'));
     }
 
     public function chat($id) {
-        $users = DB::table('users')->get();
+        $users = DB::table('users')
+            ->where('id', '!=', Auth::id())
+            ->get();
+
+        foreach($users as $user){
+            $pesan_terakhir = DB::table('message')
+            ->where(function($query) use ($user){
+                $query->where('pengirim_id', Auth::id())
+                      ->where('penerima_id', $user->id);
+            })
+
+            ->orWhere(function($query) use ($user){
+                $query->where('pengirim_id', $user->id)
+                      ->where('penerima_id', Auth::id());
+            })
+
+            ->latest()
+            ->first();
+
+            $user->pesanTerakhir = $pesan_terakhir ? $pesan_terakhir->pesan : 'Belum ada pesan';
+        }
+
         $userDipilih = DB::table('users')->where('id', $id)->first();
 
         $pesan = DB::table('message')
