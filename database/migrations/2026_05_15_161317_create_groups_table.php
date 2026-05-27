@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('groups', function (Blueprint $table) {
             $table->id();
             $table->string('nama_group');
-            $table->string('gambar')->nullable();
+            $table->string('gambar')->default('default.png');
             $table->timestamps();
         });
     }

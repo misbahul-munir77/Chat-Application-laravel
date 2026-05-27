@@ -10,6 +10,8 @@
 
 .container{
     display: flex;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .sidebar{
@@ -18,6 +20,7 @@
     box-shadow: 0 0 15px rgba(0, 0, 0);
     height: 100vh;
     position: fixed;
+    transition: 0.3s ease;
 }
 
 .logo-app{
@@ -123,14 +126,14 @@
 
 /* bagian daftar user */
 .daftar-user{
-    width: 400px;
-    margin: 0 0 0 245px;
-    padding-top: 20px;
+    width: 550px;
+    padding: 20px 0 0 245px;
+    transition: 0.3s ease;
+    overflow-y: auto;
 }
 
 .daftar-user h3{
     font-weight: bold;
-    margin-bottom: 15px;
 }
 
 /* search */
@@ -204,8 +207,9 @@
 
 .tampilan-chat{
     border-right: 2px solid #d5d5d5;
-    width: 100%;
-    height: 100vh;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
 }
 
 .profil-atas{
@@ -405,4 +409,31 @@
 .group-cek h2{
     font-size: 24px;
     font-weight: bold;
+}
+
+/* toggle */
+.toogle-btn{
+    cursor: pointer;
+}
+
+.toogle-btn img{
+    width: 20px;
+    height: 20px;
+}
+
+.bungkus-side{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 15px;
+}
+
+.sidebar.close{
+    transition: 0s;
+    transform: translateX(-235px);
+}
+
+.daftar-user.full{
+    padding-left: 0;
+    width: 350px;
 }
