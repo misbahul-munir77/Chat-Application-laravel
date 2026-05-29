@@ -12,7 +12,7 @@
         <div class="sidebar">
             <div class="logo-app">
                 <img src="{{ asset('img/logo_pesan.png') }}" alt="">
-                <h3>BahulApp</h3>
+                <h3>HullApp</h3>
             </div>
             <div class="menu-href">
                 <a href="/user" class="chat">
@@ -53,6 +53,9 @@
                 </div>
             </a>
             @endforeach
+            <a href="/tambah" class="tambah-grup">
+                + Buat Grub
+            </a>
         </div>
         <div class="tampilan-chat">
             <div class="tampilan-tengah">

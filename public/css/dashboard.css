@@ -437,3 +437,16 @@
     padding-left: 0;
     width: 350px;
 }
+
+.tambah-grup{
+    background-color: #0f3077;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}

@@ -87,6 +87,34 @@ class GroupController extends Controller
     }
 
     public function buat() {
-        return view('user.buatGroup');
+        $users = DB::table('users')->where('id', '!=', Auth::id())->get();
+        return view('user.buatGroup', compact('users'));
+    }
+
+    public function tambah(Request $request) {
+        $request->validate([
+            'nama_group' => 'required|string|max:255',
+            'user_id' => 'required|array',
+        ]);
+
+        $grubMasuk = DB::table('groups')->insertGetId([
+            'nama_group' => $request->nama_group,
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('group_user')->insert([
+            'group_id' => $grubMasuk,
+            'user_id' => Auth::id()
+        ]);
+
+
+        foreach($request->user_id as $idUser){
+            DB::table('group_user')->insert([
+                'group_id' => $grubMasuk,
+                'user_id' => $idUser
+            ]);
+        }
+        return redirect('/group');
     }
 }

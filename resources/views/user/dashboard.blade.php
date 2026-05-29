@@ -12,7 +12,7 @@
         <div class="sidebar">
             <div class="logo-app">
                 <img src="{{ asset('img/logo_pesan.png') }}" alt="">
-                <h3>ChatApp</h3>
+                <h3>HullApp</h3>
             </div>
             <div class="menu-href">
                 <a href="/user" class="chat">

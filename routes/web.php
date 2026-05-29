@@ -29,5 +29,6 @@ Route::middleware('auth')->group(function (){
     Route::get('/group/{id}', [GroupController::class, 'group']);
     Route::post('/group/kirim', [GroupController::class, 'kirim']);
 
-    Route::get('/buatgroup', [GroupController::class, 'buat']);
+    Route::get('/tambah', [GroupController::class, 'buat']);
+    Route::post('/buat', [GroupController::class, 'tambah']);
 });
